@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Personal Portfolio</title>
         <link href="./assets/css/styles.css" rel="stylesheet"/>
+        <script src="https://kit.fontawesome.com/ae892e4917.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="page-wrapper">
@@ -191,35 +192,50 @@
                     <div class="container">
                         <div class="form">
                             <form>
+                                <h2>Contact Me</h2>
                                 <label for="fname">Full Name:</label><br>
-                                <input type="text" value="John Doe"/><br>
+                                <input type="text" onfocus="this.value=''" value="John Doe"/>
+                                <div class="line"></div>
                                 <label for="email">Email:</label><br>
-                                <input type="email" value="email@me.com"><br>
+                                <input type="email" onfocus="this.value=''" value="email@me.com">
+                                <div class="line"></div>
                                 <label for="message">Message:</label><br>
-                                <input type="text" value="hello"><br>
-                                <input type="submit" value="Submit"/>
+                                <input type="text" onfocus="this.value=''" value="hello">
+                                <div class="line"></div>
+                                <button type="submit" value="Submit">Contact Me</button>
                             </form>
                         </div>
-                        <div class="links">
-                            <ul>
-                                <li>
-                                    <a id="profile-link" href="https://github.com/Sly-Ry" target="_blank">Github</a>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>
-                                    <a id="profile-link" href="https://github.com/Sly-Ry" target="_blank">Github</a>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>
-                                    <a id="profile-link" href="https://github.com/Sly-Ry" target="_blank">Github</a>
-                                </li>
-                            </ul>
+                        <div class="info">
+                            <section class="based">
+                                <h3>Contact</h3>
+                                <p>yourEmail@here.com</p>
+                            </section>
+                            <section class="based">
+                                <h3>Based in</h3>
+                                <p>The City,</p>
+                                <p>Yulivin</p>
+                            </section>
+                            <div class="links">
+                                <ul>
+                                    <li>
+                                        <a id="profile-link" class=" twitter" href="https://github.com/Sly-Ry" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                                        
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a id="profile-link" class="facebook" href="https://github.com/Sly-Ry" target="_blank">
+                                        <i class="fa fa-github" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a id="profile-link" class="github" href="https://github.com/Sly-Ry" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    
-                    
+                    </div>             
                 </section>
             </div>
             <footer>
