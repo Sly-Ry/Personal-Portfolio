@@ -63,11 +63,18 @@ section {
 
 
 /* Projects Section */
+#projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .proj-track {
-    margin: 30px;
-    height: 90.5%;
-    background-color: rgba(0, 0, 0, 0.384);
-    border-radius: 25px;
+    margin: -40px 25px 0 25px;
+    height: 87%;
+    background-color: rgba(34, 18, 54, 0.603);
+    border: 10px solid rgba(0, 0, 0, 0.418);
+    border-radius: 15px;
     overflow-y: auto;
 }
 
@@ -76,19 +83,18 @@ section {
 }
 
 .proj-track h1 {
-    padding: 20px 0 10px 30px;
-    font-size: 3rem;
-    color: rgba(34, 34, 34, 0.699);
-    text-decoration: underline;
     display: flex;
     flex-direction: row;
+    padding: 20px 0 10px 30px;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.815);
+    text-decoration: underline;
 }
 
 #project {
     display: flex;
     padding-bottom: 20px;
 }
-
 
 .p-name {
     padding: 15px 15px 0 15px;
@@ -109,13 +115,12 @@ section {
     margin: 10px 0 0 -20px;
     width: 100%;
     height: auto;
-    background-color: rgba(0, 0, 0, 0.308);
-    border-radius: 0 10px 10px 0;
+    background-color: rgba(173, 173, 173, 0.329);
     overflow: scroll;
     display: flex;
     flex-direction: row;
     align-items: center;
-    box-shadow: inset 0 5px 10px rgba(49, 49, 49, 0.774);
+    box-shadow: 20px 8px 15px rgba(49, 49, 49, 0.774);
     z-index: 4;
 }
 
@@ -132,7 +137,7 @@ section {
 
 .project::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: rgb(44, 44, 44);
+    background-color: rgb(103, 42, 182);
 }
 
 .project-tile {
@@ -150,13 +155,11 @@ section {
 
 
 /* Article Style */
-
 h3.major {
     margin-top: -5px;
     padding-bottom: .5em;
     border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 }
-
 
 article {
     padding: 1.75em 1.75em 0.1em 1.75em;
@@ -223,23 +226,27 @@ article a.special:not(.button) {
 }
 
 .container {
+    background-color: rgb(255, 211, 253);
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 85%;
+    height: 730px;
 }
+
 
 /* Form Styling */
 .form {
     display: flex;
     align-items: center;
     width: 60%;
-    height: 100%;
+    height: 112%;
+    margin-left: 80px;
     padding-left: 155px;
     background-color: rgba(53, 28, 90, 0.801);
     border: 10px solid rgb(0, 0, 0);
-    border-left: transparent;
+    border-radius: 35px;
+    z-index: 4;
 }
 
 form {
@@ -303,8 +310,8 @@ button[type=submit] {
     color: white;
 }
 
-/* Info Section */
 
+/* Info Section */
 .info {
     display: flex;
     flex-direction: column;
@@ -313,27 +320,26 @@ button[type=submit] {
     width: 40%;
     height: 87%;
     font-size: 20px;
-    background-color: rgb(255, 211, 253);
+    z-index: 3;
 }
 
 .based {
-    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 100%;
+    align-items: flex-start;
+    width: 300px;
     height: 50%;
 }
 
 .info h3 {
     font-size: 55px;
-    margin-left: 40px;
+    margin-left: 10px;
 }
 
 .info p {
     font-size: 1.5rem;
-    padding-left: 80px; 
+    padding-left: 45px; 
     color: rgba(0, 0, 0, 0.452);
     font-weight: bold;
 }
@@ -341,16 +347,15 @@ button[type=submit] {
 
 /* Link Section */
 .links {
-    margin-top: 50px;
-    width: 40%;
+    width: 100%;
     display: flex;
+    justify-content: center;
 }
 
 i {
     font-size: 2.3rem;
     color: rgb(0, 0, 0);
-    margin-top: 65px;
-    padding: 0 35px;
+    padding: 40px 40px;
 }
 
 /* Footer/Nav Section */
@@ -407,7 +412,6 @@ nav a:hover {
     color: rgb(145, 154, 179);
     text-decoration: underline;
 }
-
 
 
 @media (max-width:"850") {
